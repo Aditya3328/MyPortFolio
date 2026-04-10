@@ -2728,6 +2728,7 @@ body[data-theme="dark"] .map-popup-company span {
   padding: 2rem;
   box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--border);
   transition: all 0.2s;
+  margin: 15px;
 }
 
 .project-card:hover {
