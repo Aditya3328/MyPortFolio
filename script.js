@@ -1238,7 +1238,22 @@ ${this.wrapWithColor("╰──────────────────�
   }
 
   // PDF Generation
+  
   async generatePDF() {
+  const outputElement = this.terminals[this.activeTerminal].input
+    .closest(".terminal-content")
+    .querySelector("[id^='output']");
+
+  this.printToOutput(outputElement, "Opening resume PDF...", "info");
+
+  const pdfPath = "/doc/Aditya_Kadam_DevOps_1Yr_Exp.pdf"; 
+
+  setTimeout(() => {
+    window.open(pdfPath, "_blank"); // opens in new tab
+  }, 500);
+}
+  
+  /*async generatePDF() {
     const outputElement = this.terminals[this.activeTerminal].input
       .closest(".terminal-content")
       .querySelector("[id^='output']");
@@ -1251,7 +1266,7 @@ ${this.wrapWithColor("╰──────────────────�
         "error"
       );
     }, 1000);
-  }
+  }*/
 
   // Mini-game - Snake game with p5.js
   initGame() {
