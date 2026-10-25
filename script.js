@@ -785,7 +785,7 @@ ${this.wrapWithColor(
   showExperience(outputElement = this.output) {
     const experience = `<span style="color: #ffff00; font-weight: bold;">💼 Professional Experience</span>
 
-<span style="color: #00ffff;">SUNFIRE TECHNOLOGIES | DevOps Associate</span>
+<span style="color: #00ffff;">SUNFIRE TECHNOLOGIES | DevOps Engineer</span>
 ${this.wrapWithColor(
   "Mar 2025 – Present | Pune, India",
   "#ffffff"
